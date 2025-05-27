@@ -25,11 +25,9 @@ CREATE TABLE users (
 );
 
 
-## 2. What is the Purpose of a Database Schema in PostgreSQL?
+ ##2. What is the Purpose of a Database Schema in PostgreSQL?
 
 **PostgreSQL**-এ একটি **Schema** হলো ডাটাবেসের ভিতরের একটি ফোল্ডারের মতো, যেখানে **টেবিল (tables)**, **ভিউ (views)**, **ফাংশন (functions)**, **ইন্ডেক্স (indexes)** ইত্যাদি সংরক্ষণ করা হয়। এটি ডাটাবেসকে আরও **গুছিয়ে এবং নিরাপদভাবে** ব্যবস্থাপনা করতে সাহায্য করে।
-
- 
 
 ### কেন Schema ব্যবহার করা হয়?
 
