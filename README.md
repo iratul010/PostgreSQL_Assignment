@@ -23,6 +23,7 @@ CREATE TABLE users (
   email VARCHAR(100) UNIQUE,
   password TEXT
 );
+```
 
 
  ##2. What is the Purpose of a Database Schema in PostgreSQL?
@@ -49,7 +50,7 @@ CREATE TABLE public.users (
   id SERIAL PRIMARY KEY,
   name TEXT
 );
-
+```
  -- admin স্কিমায় settings টেবিল
 CREATE TABLE admin.settings (
   id SERIAL PRIMARY KEY,
@@ -77,7 +78,7 @@ CREATE TABLE customers (
   name TEXT NOT NULL,
   email TEXT UNIQUE
 );
-
+```
 ###  Foreign Key  
 
 **Foreign Key** হলো এমন একটি কলাম যা অন্য একটি টেবিলের Primary Key-এর সাথে সম্পর্ক তৈরি করে।
@@ -95,7 +96,7 @@ CREATE TABLE orders (
   customer_id INTEGER,
   FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
-
+```
 
 ## 4. What is the difference between the VARCHAR and CHAR data types?
 
@@ -111,6 +112,7 @@ PostgreSQL-এ `VARCHAR` এবং `CHAR` — দুটোই **স্ট্র�
 CREATE TABLE example_char (
   code CHAR(5)
 );
+```
 --'AB' ইনসার্ট করলে, ভেতরে রাখা হবে 'AB   '
 ## 5. Explain the purpose of the WHERE clause in a SELECT statement
 
@@ -123,5 +125,6 @@ CREATE TABLE example_char (
 
 ### উদাহরণ:
 
-sql
+```sql
 SELECT * FROM customers WHERE city = 'Dhaka';
+```
